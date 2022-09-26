@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 {% extends "base.html" %}
 
-{% block title %}Sobre mim{% endblock %}
-{% block style %}<link rel="stylesheet" href="../static/home.css">{% endblock %}
+{% block title %}About me{% endblock %}
+{% block style %}<link rel="stylesheet" href="../static/about_me.css">{% endblock %}
 
 {% block content %}
-    <h3 class="title">André de Oliveira Haffner</h3>
+    <div class="header">
+        <h3 class="title"><b>André de Oliveira Haffner</b></h3>
+        <h3 class="title2">Fullstack Developer</h3>
+    </div>
+    <br/><br/>
+    <section class="left_section">
+        <img alt="me" src="../static/images/me.png" class="me">
+        <div class="contacts">
+            <a href="https://www.github.com/andrehaffner" target="_blank">
+                <img alt="github" src="../static/images/github.png" class="contact">
+            </a>
+            <a  href="https://www.linkedin.com/in/andrehaffner" target="_blank">
+                <img alt="linkedin" src="../static/images/linkedin.png" class="contact">
+            </a>
+            <a href="mailto:andrehaffner@outlook.com?subject=Hello%20André!" target="_blank">
+                <img alt="email" src="../static/images/email.png" class="contact">
+            </a>
+        </div>
+    </section>
+    <section class="right_section">
+        <blockquote class="blockquote">
+            <p class="blocktext">I am a passionate <b>technology</b> professional.</p>
+            <p class="blocktext">I love to learn, and the engine that moves me is seeing a project coming out of paper.</p>
+            <p class="blocktext">Through automation I seek to improve the quality and <b>productivity</b> of processes and businesses.</p>
+            <p class="blocktext">I was already responsible for more than 10 git repositories and creator of 100+ <b>automated processes</b> in python.</p>
+            <p class="blocktext">Son of Brazilians, I haven't lived abroad yet, but I've already done an exchange program in the US to improve my English.</p>
+            <p class="blocktext">Constant enthusiast of <b>technological advancement</b>, I'm always in search of learning and stability.</p>
+            <p class="blocktext"><b>Much to learn, always.</b></p>
+        </blockquote>
+        <br/><br/>
+    </section>
 {% endblock %}

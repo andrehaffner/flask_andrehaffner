@@ -1,15 +1,22 @@
 
+.header {
+    border-radius:25px;
+    background-color:#343A40;
+    padding:3%
+}
+
 .title {
+    color:#E9ECEF;
     text-align:center;
     font-size:200%;
-    font-family:"Lucida Console", "Courier New", monospace;
+    font-family:Lucida Console, Courier New, monospace;
 }
 
 .title2 {
+    color:#E9ECEF;
     text-align:center;
-    font-size:180%;
-    font-family:"Courier New", monospace;
-    margin-bottom:10%;
+    font-size:190%;
+    font-family:Courier New, monospace;
 }
 
 .left_section {
@@ -18,29 +25,39 @@
 }
 
 .me {
+    width:100%;
+}
 
+.contacts {
+    margin-top:30px;
+    padding:5%;
+    display:inline-block;
+    float:left;
+}
+
+.contact {
+    padding:2%;
+    width:32%;
+    display:inline;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .right_section {
-    width:65%;
+    margin-top:10px;
+    width:60%;
     float:right;
 }
 
-.about_me {
-    font-size:120%;
-    color:black;
-    font-family:"Lucida Console", monospace;
+.blockquote {
+    border-radius:25px;
+    background-color:#343A40;
+    padding:3%;
+}
+
+.blocktext {
+    color:#E9ECEF;
     text-align:justify;
-}
-
-.red_text {
-    color:#F71735;
-}
-
-.yellow_text {
-    color:#FEB95F;
-}
-
-.pink_text {
-    color:#C2095A;
+    font-size:100%;
+    font-family:Lucida Console, monospace;
 }

@@ -1,21 +1,21 @@
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
-from views import views
 
 
-def create_application(database):
-    uri = 'postgresql+psycopg2://hafftech:mZMjoh792mXPwAr1McyP@' \
-          'hafftech.c1smrictv5up.sa-east-1.rds.amazonaws.com/andrehaffner'
-    application = Flask('flask')
-    application.config["SQLALCHEMY_DATABASE_URI"] = uri
-    application.register_blueprint(views, url_prefix="/")
-    application.config["SECRET_KEY"] = "as@d145!sidh12*G3478"
-    application.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    database.init_app(application)
-    return application
+def create_webapp(database):
+    app = Flask(__name__, template_folder='templates')
+    postgres_uri = 'postgresql+psycopg2://hafftech:mZMjoh792mXPwAr1McyP@' \
+                   'hafftech.c1smrictv5up.sa-east-1.rds.amazonaws.com/andrehaffner'
+    from views import views
+    app.register_blueprint(views, url_prefix="/")
+    app.config["SECRET_KEY"] = "as@d145!sidh12*G3478"
+    app.config["SQLALCHEMY_DATABASE_URI"] = postgres_uri
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    database.init_app(app)
+    return app
 
 
+database = SQLAlchemy()
 if __name__ == '__main__':
-    database = SQLAlchemy()
-    application = create_application(database)
-    application.run(port=1808, debug=True)
+    webapp = create_webapp(database)
+    webapp.run(port=1808, debug=True)

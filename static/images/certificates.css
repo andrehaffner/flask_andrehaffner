@@ -12,7 +12,6 @@
     font-family:Lucida Console, Courier New, monospace;
 }
 
-
 .certificate {
     width:100%;
     padding:10%;
@@ -37,10 +36,6 @@
     margin-bottom:1%;
 }
 
-.paragraph {
-    color:#E9ECEF;
-    text-align:justify;
-    font-size:120%;
-    font-family:Courier New, monospace;
-    margin-bottom:1%;
+.image {
+    width:80%
 }

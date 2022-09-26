@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="eng-US">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="description" content=">Diretor da ActShare / Expert em gestão organizacional">
+        <link rel="stylesheet" href="../static/base.css">
         <link rel="stylesheet"
               href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
               integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
@@ -14,38 +15,27 @@
         {% block style %}{% endblock %}
         <title>{% block title %}{% endblock %}</title>
     </head>
-    <body>
+    <body class="body">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
-                {% if not user.is_authenticated %}
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" id="login" href="/login">Login</a>
+                    <a class="nav-item nav-link" id="about_me" href="/about-me">
+                        About me
+                    </a>
                 </div>
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" id="signup" href="/sign-up">Signup</a>
-                </div>
-                {% else %}
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
-                </div>
-                {% endif %}
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" id="home" href="/">Sobre mim</a>
+                    <a class="nav-item nav-link" id="professional_experience" href="/professional-experience">
+                        Professional Experience
+                    </a>
                 </div>
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" id="blog" href="/blog">Blog Pessoal</a>
+                    <a class="nav-item nav-link" id="professional_experience" href="/certificates">
+                        Certificates
+                    </a>
                 </div>
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" id="news" href="/news">Notícias</a>
-                </div>
-                {%  if user.admin == 1 %}
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" id="admin" href="/admin">Admin</a>
-                </div>
-                {% endif %}
             </div>
         </nav>
         {% with messages = get_flashed_messages(with_categories=true) %}
