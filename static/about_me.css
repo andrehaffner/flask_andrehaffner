@@ -1,0 +1,46 @@
+
+.title {
+    text-align:center;
+    font-size:200%;
+    font-family:"Lucida Console", "Courier New", monospace;
+}
+
+.title2 {
+    text-align:center;
+    font-size:180%;
+    font-family:"Courier New", monospace;
+    margin-bottom:10%;
+}
+
+.left_section {
+    width:30%;
+    float:left;
+}
+
+.me {
+
+}
+
+.right_section {
+    width:65%;
+    float:right;
+}
+
+.about_me {
+    font-size:120%;
+    color:black;
+    font-family:"Lucida Console", monospace;
+    text-align:justify;
+}
+
+.red_text {
+    color:#F71735;
+}
+
+.yellow_text {
+    color:#FEB95F;
+}
+
+.pink_text {
+    color:#C2095A;
+}
