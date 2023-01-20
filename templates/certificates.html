@@ -13,7 +13,7 @@
         <section class="certificate">
             <p class="title2"><b>{{ certificate.title }}</b></p>
             <p class="subtitle">{{ certificate.subtitle }}</p>
-            <img alt="certificate" src="{{ certificate.file }}" class="image">
+            <img alt="certificate" src="./static/certificates{{ certificate.file }}" class="image">
         </section>
     {% endfor %}
 {% endblock %}
