@@ -4,8 +4,8 @@ from flask import Flask
 
 def create_webapp(database):
     app = Flask(__name__, template_folder='templates')
-    postgres_uri = 'postgresql+psycopg2://hafftech:mZMjoh792mXPwAr1McyP@' \
-                   'hafftech.c1smrictv5up.sa-east-1.rds.amazonaws.com/andrehaffner'
+    postgres_uri = 'postgresql+psycopg2://andrehaffner:gZkKM0lLSscHBfLG0nOX@' \
+                   'andrehaffner.c4odpxfl6c52.us-east-1.rds.amazonaws.com/andrehaffner'
     from views import views
     app.register_blueprint(views, url_prefix="/")
     app.config["SECRET_KEY"] = "as@d145!sidh12*G3478"

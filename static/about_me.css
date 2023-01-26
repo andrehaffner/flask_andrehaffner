@@ -19,6 +19,13 @@
     font-family:Courier New, monospace;
 }
 
+.title3 {
+    color:#E9ECEF;
+    text-align:center;
+    font-size:140%;
+    font-family:Courier New, monospace;
+}
+
 .left_section {
     width:30%;
     float:left;
