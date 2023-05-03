@@ -1,0 +1,59 @@
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ certificates.css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.header {
+    margin:1vw 30% 5% 30%;
+    background-color:rgb(110, 99, 61, .7);
+    border-radius:10px;
+    padding:2% 0;
+}
+
+.title {
+    font-family: Impact, serif;
+    font-size:300%;
+    text-align:center;
+    color:#19A7CE;
+    margin:auto;
+}
+
+.certificate {
+    padding:2%;
+    background-color:#696969;
+    border-radius:10%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 7%;
+    display:flex;
+    width:80%
+}
+
+.photo {
+    float:left;
+    margin: auto;
+    width: 20%;
+}
+
+.text {
+    margin: auto;
+    width: 60%;
+    float: left;
+    font-family: Impact, serif;
+}
+
+.course {
+    font-family: Impact, serif;
+    font-size:250%;
+    color:#F6F1F1;
+}
+
+.institution {
+    font-family: Impact, serif;
+    font-size:210%;
+    color:#19A7CE;
+}
+
+.date_range {
+    font-family: Impact, serif;
+    font-size:210%;
+    color:#F6F1F1;
+}

@@ -2,18 +2,22 @@
 {% extends "base.html" %}
 
 {% block title %}Certificates{% endblock %}
-{% block style %}<link rel="stylesheet" href="../static/certificates.css">{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="../static/styles/certificates.css">
+{% endblock %}
 
 {% block content %}
-    <div class="header">
-        <h3 class="title"><b>Certificates</b></h3>
-    </div>
-    <br/><br/>
-    {% for certificate in certificates %}
-        <section class="certificate">
-            <p class="title2"><b>{{ certificate.title }}</b></p>
-            <p class="subtitle">{{ certificate.subtitle }}</p>
-            <img alt="certificate" src="../static/certificates/{{ certificate.file }}" class="image">
-        </section>
-    {% endfor %}
+<h2 class="title">CERTIFICATED COURSES</h2>
+
+{% for certificate in certificates %}
+<section class="certificate">
+    <img src="../static/images/certificates/{{certificate.image}}" alt="{{certificate.image}}" class="photo">
+    <blockquote class="text">
+        <p class="course">{{certificate.course}}</p>
+        <p class="institution">{{certificate.institution}}</p>
+        <p class="date_range">{{certificate.date_period}}</p>
+    </blockquote>
+</section>
+{% endfor %}
+
 {% endblock %}

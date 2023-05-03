@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block title %}Education{% endblock %}
+{% block style %}<link rel="stylesheet" href="../static/styles/education.css">{% endblock %}
+
+{% block content %}
+<h2 class="title">EDUCATION</h2>
+
+{% for education in educations %}
+<section class="education">
+    <img src="../static/images/education/{{education.image}}" alt="{{education.image}}" class="photo">
+    <blockquote class="text">
+        <p class="diploma">{{education.diploma}}</p>
+        <p class="institution">{{education.institution}}</p>
+        <p class="date_range">{{education.date_period}}</p>
+    </blockquote>
+</section>
+{% endfor %}
+
+{% endblock %}
