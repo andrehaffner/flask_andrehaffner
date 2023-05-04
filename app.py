@@ -41,6 +41,14 @@ def certificates():
     return render_template("certificates.html", certificates=data)
 
 
+@Views.route("/data")
+def data():
+    table1 = Experience.query.order_by(Experience.id).all()
+    table2 = Education.query.order_by(Education.id).all()
+    table3 = Certificate.query.order_by(Certificate.id).all()
+    return render_template("data.html", table1=table1, table2=table2, table3=table3)
+
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Models ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
 
@@ -69,6 +77,7 @@ class Experience(db.Model):
     company = db.Column(db.String)
     date_period = db.Column(db.String)
     image = db.Column(db.String)
+
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Code ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
