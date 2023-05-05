@@ -1,0 +1,5 @@
+
+dotenv
+flask
+flask_sqlalchemy
+os
