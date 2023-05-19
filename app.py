@@ -62,7 +62,7 @@ class Certificate(db.Model):
 
 
 class Education(db.Model):
-    __tablename__ = 'educations'
+    __tablename__ = 'education'
     id = db.Column(db.Integer, primary_key=True)
     diploma = db.Column(db.String)
     institution = db.Column(db.String)
