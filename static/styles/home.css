@@ -1,41 +1,40 @@
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ home.css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+.bio {
+    color: #F6F1F1;
+    float: right;
+    font-family: Impact, serif;
+    font-size: 25px;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    text-align: justify;
+    width: 50vw;
+}
+
 .me {
-    object-fit:contain;
     float: left;
-    width: 30vw;
     margin-left: 5.5vw;
-    margin-top:10vh;
+    margin-top: 10vh;
+    object-fit: contain;
+    width: 30vw;
 }
 
 .name {
-    font-size:30px;
-    font-family: Impact, serif;
     color: #19A7CE;
     float: right;
+    font-family: Impact, serif;
+    font-size: 30px;
     margin-right: 5vw;
     margin-top: 12vw;
     width: 50vw;
 }
 
 .role {
-    font-size:25px;
-    font-family: Impact, serif;
     color: #F6F1F1;
     float: right;
+    font-family: Impact, serif;
+    font-size: 25px;
     margin-right: 5vw;
     margin-top: 1vw;
-    width: 50vw;
-}
-
-.bio {
-    text-align:justify;
-    font-size: 25px;
-    font-family: Impact, serif;
-    color: #F6F1F1;
-    float: right;
-    margin-right: 5vw;
-    margin-top: 2vw;
     width: 50vw;
 }

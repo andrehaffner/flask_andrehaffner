@@ -1,52 +1,92 @@
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ certificates.css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.title {
-    font-family: Impact, serif;
-    font-size:300%;
-    text-align:center;
-    color:#19A7CE;
-    margin:auto;
-}
-
 .certificate {
-    padding:2%;
-    background-color:#696969;
-    border-radius:10%;
-    margin-left:10%;
-    margin-right:10%;
-    margin-top: 7%;
-    display:flex;
-    width:80%
+    background-color: #696969;
+    border-radius: 5%;
+    display: flex;
+    margin: 1.5% 10% 1.5% 10%;
+    padding: 2%;
+    width: 80%;
 }
 
-.photo {
-    float:left;
-    margin: auto;
-    width: 20%;
+.certificate_mob {
+    background-color: #696969;
+    border-radius: 5%;
+    margin: 1.5% 10% 1.5% 10%;
+    width: 80%;
 }
 
-.text {
-    margin: auto;
-    width: 60%;
-    float: left;
+.course,
+.date_period {
+    color: #F6F1F1;
     font-family: Impact, serif;
+    font-size: 320%;
 }
 
-.course {
-    font-family: Impact, serif;
-    font-size:200%;
-    color:#F6F1F1;
+.description {
+    color: #F6F1F1;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 130%;
+    padding: 10%;
+    text-align: justify;
 }
 
 .institution {
+    color: #19A7CE;
     font-family: Impact, serif;
-    font-size:160%;
-    color:#19A7CE;
+    font-size: 320%;
 }
 
-.date_range {
+.photo {
+    border-radius: 10%;
+    float: left;
+    margin: auto;
+    width: 30%;
+}
+
+.photo_mob {
+    display: block;
+    width: 80%;
+    border-radius: 15%;
+    margin: auto;
+    padding: 5%;
+}
+
+.text {
     font-family: Impact, serif;
-    font-size:160%;
-    color:#F6F1F1;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+}
+
+.text2 {
+    float: right;
+    width: 40%;
+}
+
+.text_mob {
+    margin: auto;
+    padding: 5%;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.title {
+    color: #F6F1F1;
+    font-family: Impact, serif;
+    font-size: 350%;
+    margin: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1026px) {
+    #computer {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1027px) {
+    #mobile {
+        display: none;
+    }
 }

@@ -2,20 +2,50 @@
 {% extends "base.html" %}
 
 {% block title %}Education{% endblock %}
-{% block style %}<link rel="stylesheet" href="../static/styles/education.css">{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="../static/styles/education.css">
+{% endblock %}
 
 {% block content %}
-<h2 class="title">EDUCATION</h2>
+    <h2 class="title">EDUCATION</h2>
 
-{% for education in educations %}
-<section class="education">
-    <img src="../static/images/education/{{education.image}}" alt="{{education.image}}" class="photo">
-    <blockquote class="text">
-        <p class="diploma">{{education.diploma}}</p>
-        <p class="institution">{{education.institution}}</p>
-        <p class="date_range">{{education.date_period}}</p>
-    </blockquote>
-</section>
-{% endfor %}
+    {% for education in data %}
+
+        <div id="computer">
+            <section class="education">
+                <img src="../static/images/education/{{education.image}}" alt="{{education.image}}" class="photo">
+                <blockquote class="text">
+                    <p class="diploma">{{education.diploma}}</p>
+                    <p class="institution">{{education.institution}}</p>
+                    <p class="date_period">{{education.date_period}}</p>
+                </blockquote>
+                <blockquote class="text2">
+                    {% for paragraph in education.description %}
+                        <p class="description">{{paragraph}}</p>
+                    {% endfor %}
+                </blockquote>
+            </section>
+        </div>
+
+        <div id="mobile">
+            <section class="education_mob">
+                <div class="education_mob_header">
+                    <img src="../static/images/education/{{education.image}}" alt="{{education.image}}" class="photo_mob">
+                    <blockquote class="text_mob">
+                        <p class="diploma">{{education.diploma}}</p>
+                        <p class="institution">{{education.institution}}</p>
+                        <p class="date_period">{{education.date_period}}</p>
+                    </blockquote>
+                </div>
+                <blockquote class="text2_mob">
+                    {% for paragraph in education.description %}
+                        <p class="description">{{paragraph}}</p>
+                    {% endfor %}
+                </blockquote>
+            </section>
+        </div>
+
+    {% endfor %}
 
 {% endblock %}

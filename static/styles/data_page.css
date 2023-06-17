@@ -1,0 +1,40 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ data_page.css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+th,
+tr,
+table {
+    border: 2px solid #999;
+}
+
+.subtitle {
+    color: #F6F1F1;
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+}
+
+.table {
+    background-color: #696969;
+    border-collapse: collapse;
+    border: 2px solid #999;
+    color: #F6F1F1;
+    margin: 40px auto auto auto;
+    overflow-x: auto;
+    text-align: center;
+    width: 60%;
+}
+
+.table_title {
+    color: #F6F1F1;
+    font-size: 25px;
+    margin: 100px auto auto auto;
+    text-align: center;
+}
+
+.title {
+    color: #19A7CE;
+    font-family: Impact, serif;
+    font-size: 300%;
+    margin: auto;
+    text-align: center;
+}

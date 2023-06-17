@@ -2,20 +2,50 @@
 {% extends "base.html" %}
 
 {% block title %}Professional{% endblock %}
-{% block style %}<link rel="stylesheet" href="../static/styles/professional.css">{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="../static/styles/professional.css">
+{% endblock %}
 
 {% block content %}
-<h2 class="title">PROFESSIONAL EXPERIENCE</h2>
+    <h2 class="title">PROFESSIONAL EXPERIENCE</h2>
 
-{% for experience in professional %}
-<section class="experience">
-    <img src="../static/images/companies/{{experience.image}}" alt="{{experience.image}}" class="photo">
-    <blockquote class="text">
-        <p class="role">{{experience.role}}</p>
-        <p class="company">{{experience.company}}</p>
-        <p class="date_range">{{experience.date_period}}</p>
-    </blockquote>
-</section>
-{% endfor %}
+    {% for experience in data %}
+
+        <div id="computer">
+            <section class="experience">
+                <img src="../static/images/companies/{{experience.image}}" alt="{{experience.image}}" class="photo">
+                <blockquote class="text">
+                    <p class="role">{{experience.role}}</p>
+                    <p class="company">{{experience.company}}</p>
+                    <p class="date_period">{{experience.date_period}}</p>
+                </blockquote>
+                <blockquote class="text2">
+                    {% for paragraph in experience.description %}
+                        <p class="description">{{paragraph}}</p>
+                    {% endfor %}
+                </blockquote>
+            </section>
+        </div>
+
+        <div id="mobile">
+            <section class="experience_mob">
+                <div class="experience_mob_header">
+                    <img src="../static/images/companies/{{experience.image}}" alt="{{experience.image}}" class="photo_mob">
+                    <blockquote class="text_mob">
+                        <p class="role">{{experience.role}}</p>
+                        <p class="company">{{experience.company}}</p>
+                        <p class="date_period">{{experience.date_period}}</p>
+                    </blockquote>
+                </div>
+                <blockquote class="text2_mob">
+                    {% for paragraph in experience.description %}
+                        <p class="description">{{paragraph}}</p>
+                    {% endfor %}
+                </blockquote>
+            </section>
+        </div>
+
+    {% endfor %}
 
 {% endblock %}

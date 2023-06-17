@@ -1,53 +1,108 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ education.css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ certificates.css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.title {
+.date_period,
+.diploma {
+    color: #F6F1F1;
     font-family: Impact, serif;
-    font-size:300%;
-    text-align:center;
-    color:#19A7CE;
-    margin:auto;
+    font-size: 320%;
+}
+
+.description {
+    color: #F6F1F1;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 130%;
+    padding: 5%;
+    text-align: justify;
 }
 
 .education {
-    padding:2%;
-    background-color:#696969;
-    border-radius:10%;
-    margin-left:10%;
-    margin-right:10%;
-    margin-top: 7%;
-    display:flex;
-    width:80%
+    background-color: #696969;
+    border-radius: 5%;
+    display: flex;
+    margin: 1.5% 10% 1.5% 10%;
+    padding: 2%;
+    width: 80%;
 }
 
-.photo {
-    float:left;
-    margin: auto;
-    width: 20%;
-    border-radius: 10%;
+.education_mob {
+    background-color: #696969;
+    border-radius: 5%;
+    margin: 1.5% 10% 1.5% 10%;
+    padding: 2%;
+    width: 80%;
 }
 
-.text {
-    margin: auto;
-    width: 60%;
-    float: left;
-
-}
-
-.diploma {
-    font-family: Impact, serif;
-    font-size:200%;
-    color:#F6F1F1;
+.education_mob_header {
+    margin-top: 10%;
+    width: 100%;
 }
 
 .institution {
+    color: #19A7CE;
     font-family: Impact, serif;
-    font-size:160%;
-    color:#19A7CE;
+    font-size: 320%;
 }
 
-.date_range {
+.photo {
+    border-radius:20%;
+    float: left;
+    margin: auto;
+    width: 30%;
+    padding: 5%;
+}
+
+.photo_mob {
+    border-radius: 10%;
+    float: left;
+    margin: auto auto auto 5%;
+    width: 30%;
+}
+
+.text {
     font-family: Impact, serif;
-    font-size:160%;
-    color:#F6F1F1;
+    margin: auto;
+    text-align: center;
+    width: 35%;
+}
+
+.text_mob {
+    float: right;
+    font-family: Impact, serif;
+    margin-top: 5%;
+    text-align: center;
+    width: 60%;
+    font-size: 1.2vw;
+}
+
+.text2 {
+    margin: auto;
+    float: right;
+    width: 35%;
+    padding: 5%;
+}
+
+.text2_mob {
+    margin-top: 50%;
+    width: 100%;
+    font-size: 70%;
+}
+
+.title {
+    color: #F6F1F1;
+    font-family: Impact, serif;
+    font-size: 350%;
+    margin: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1026px) {
+    #computer {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1027px) {
+    #mobile {
+        display: none;
+    }
 }

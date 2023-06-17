@@ -26,27 +26,32 @@ def home():
 @Views.route("/professional")
 def professional():
     data = Experience.query.order_by(Experience.id).all()
-    return render_template("professional.html", professional=data)
+    for experience in data:
+        experience.description = experience.description.split("<br>")
+    return render_template("professional.html", data=data)
 
 
 @Views.route("/education")
 def education():
     data = Education.query.order_by(Education.id).all()
-    return render_template("education.html", educations=data)
+    for education in data:
+        education.description = education.description.split("<br>")
+    return render_template("education.html", data=data)
 
 
 @Views.route("/certificates")
 def certificates():
     data = Certificate.query.order_by(Certificate.id).all()
-    return render_template("certificates.html", certificates=data)
+    return render_template("certificates.html", data=data)
 
 
 @Views.route("/data")
-def data():
-    table1 = Experience.query.order_by(Experience.id).all()
-    table2 = Education.query.order_by(Education.id).all()
-    table3 = Certificate.query.order_by(Certificate.id).all()
-    return render_template("data.html", table1=table1, table2=table2, table3=table3)
+def data_page():
+    professional_table = Experience.query.order_by(Experience.id).all()
+    education_table = Education.query.order_by(Education.id).all()
+    certificates_table = Certificate.query.order_by(Certificate.id).all()
+    return render_template("data_page.html", professional_table=professional_table,
+                           education_table=education_table, certificates_table=certificates_table)
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Models ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
@@ -68,6 +73,7 @@ class Education(db.Model):
     institution = db.Column(db.String)
     date_period = db.Column(db.String)
     image = db.Column(db.String)
+    description = db.Column(db.String)
 
 
 class Experience(db.Model):
@@ -77,6 +83,7 @@ class Experience(db.Model):
     company = db.Column(db.String)
     date_period = db.Column(db.String)
     image = db.Column(db.String)
+    description = db.Column(db.String)
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Code ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
