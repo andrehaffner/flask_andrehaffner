@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="André Haffner's personal website!">
-    <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="../static/styles/base.css">
     <link rel="icon" href="../static/images/icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/stylesheets/base.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="André Haffner's personal website!"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
+    <title>{% block title %}{% endblock %}</title>
     {% block style %}{% endblock %}
     <script src="https://kit.fontawesome.com/77d6772feb.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="body">
     <section class="h">
         <nav class="nav">
@@ -36,12 +38,12 @@
         </nav>
     </section>
 
-
-
     <section>
         <br/><br/><br/>
         {% block content %}
         {% endblock %}
     </section>
+
 </body>
+
 </html>
