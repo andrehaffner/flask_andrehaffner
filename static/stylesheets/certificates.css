@@ -13,6 +13,7 @@
     background-color: #696969;
     border-radius: 5%;
     margin: 1.5% 10% 1.5% 10%;
+    padding: 2%;
     width: 80%;
 }
 
@@ -74,8 +75,16 @@
 .title {
     color: #F6F1F1;
     font-family: Impact, serif;
-    font-size: 350%;
-    margin: auto;
+    font-size: 380%;
+    padding: 30px;
+    text-align: center;
+}
+
+.title_mob {
+    color: #F6F1F1;
+    font-family: Impact, serif;
+    font-size: 200%;
+    padding: 30px;
     text-align: center;
 }
 

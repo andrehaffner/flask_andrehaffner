@@ -36,6 +36,7 @@ a {
 .nav {
     background: #146C94;
     height: 80px;
+    position: fixed;
     width: 100%;
 }
 
@@ -113,8 +114,10 @@ a {
     }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
     body, html {
         overflow-x: hidden;
         width: 100%;

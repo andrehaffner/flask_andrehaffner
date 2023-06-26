@@ -8,32 +8,33 @@
 {% endblock %}
 
 {% block content %}
-    <h2 class="title">CERTIFICATED COURSES</h2>
-
-    {% for certificate in data %}
 
         <div id="computer">
-            <section class="certificate">
-                <img src="../static/images/certificates/{{certificate.image}}" alt="Not finished yet." class="photo">
-                <blockquote class="text">
-                    <p class="course">{{certificate.course}}</p>
-                    <p class="institution">{{certificate.institution}}</p>
-                    <p class="date_period">{{certificate.date_period}}</p>
-                </blockquote>
-            </section>
+            <h2 class="title">CERTIFICATED COURSES</h2>
+            {% for certificate in data %}
+                <section class="certificate">
+                    <img src="../static/images/certificates/{{certificate.image}}" alt="Not finished yet." class="photo">
+                    <blockquote class="text">
+                        <p class="course">{{certificate.course}}</p>
+                        <p class="institution">{{certificate.institution}}</p>
+                        <p class="date_period">{{certificate.date_period}}</p>
+                    </blockquote>
+                </section>
+            {%  endfor %}
         </div>
 
         <div id="mobile">
-            <section class="certificate_mob">
-                <img src="../static/images/certificates/{{certificate.image}}" alt="Not finished yet." class="photo_mob">
-                <blockquote class="text_mob">
-                    <p class="course">{{certificate.course}}</p>
-                    <p class="institution">{{certificate.institution}}</p>
-                    <p class="date_period">{{certificate.date_period}}</p>
-                </blockquote>
-            </section>
+            <h2 class="title_mob">CERTIFICATED COURSES</h2>
+            {% for certificate in data %}
+                <section class="certificate_mob">
+                    <img src="../static/images/certificates/{{certificate.image}}" alt="Not finished yet." class="photo_mob">
+                    <blockquote class="text_mob">
+                        <p class="course">{{certificate.course}}</p>
+                        <p class="institution">{{certificate.institution}}</p>
+                        <p class="date_period">{{certificate.date_period}}</p>
+                    </blockquote>
+                </section>
+            {% endfor %}
         </div>
-
-    {% endfor %}
 
 {% endblock %}

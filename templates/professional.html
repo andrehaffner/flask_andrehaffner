@@ -8,11 +8,10 @@
 {% endblock %}
 
 {% block content %}
-    <h2 class="title">PROFESSIONAL EXPERIENCE</h2>
 
-    {% for experience in data %}
-
-        <div id="computer">
+    <div id="computer">
+        <h2 class="title">PROFESSIONAL EXPERIENCE</h2>
+        {% for experience in data %}
             <section class="experience">
                 <img src="../static/images/companies/{{experience.image}}" alt="{{experience.image}}" class="photo">
                 <blockquote class="text">
@@ -26,9 +25,12 @@
                     {% endfor %}
                 </blockquote>
             </section>
-        </div>
+        {% endfor %}
+    </div>
 
-        <div id="mobile">
+    <div id="mobile">
+        <h2 class="title_mob">PROFESSIONAL EXPERIENCE</h2>
+        {% for experience in data %}
             <section class="experience_mob">
                 <div class="experience_mob_header">
                     <img src="../static/images/companies/{{experience.image}}" alt="{{experience.image}}" class="photo_mob">
@@ -44,8 +46,7 @@
                     {% endfor %}
                 </blockquote>
             </section>
-        </div>
-
-    {% endfor %}
+        {% endfor %}
+    </div>
 
 {% endblock %}
