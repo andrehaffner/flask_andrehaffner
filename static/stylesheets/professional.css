@@ -1,37 +1,41 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ professional.css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .company {
-    color: #19A7CE;
+    color: #B6C4B6;
     font-family: Impact, serif;
     font-size: 320%;
 }
 
 .date_period,
 .role {
-    color: #F6F1F1;
+    color: #EEF0E5;
     font-family: Impact, serif;
     font-size: 320%;
 }
 
 .description {
-    color: #F6F1F1;
+    color: #EEF0E5;
     font-family: 'Noto Sans', sans-serif;
     font-size: 130%;
-    padding: 5%;
+    padding: 1%;
     text-align: justify;
 }
 
 .experience {
-    background-color: #696969;
+    background-color: #304D30;
     border-radius: 5%;
-    display: flex;
     margin: 1.5% 10% 1.5% 10%;
     padding: 2%;
     width: 80%;
 }
 
+.experience_header {
+    width: 100%;
+    display: flex;
+}
+
 .experience_mob {
-    background-color: #696969;
+    background-color: #304D30;
     border-radius: 5%;
     margin: 1.5% 10% 1.5% 10%;
     padding: 2%;
@@ -41,6 +45,7 @@
 .experience_mob_header {
     margin-top: 10%;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .photo {
@@ -59,10 +64,11 @@
 }
 
 .text {
+    float: right;
     font-family: Impact, serif;
     margin: auto;
     text-align: center;
-    width: 35%;
+    width: 42%;
 }
 
 .text_mob {
@@ -75,20 +81,18 @@
 }
 
 .text2 {
-    margin: auto;
-    float: right;
-    width: 35%;
+    width: 100%;
     padding: 5%;
 }
 
 .text2_mob {
-    margin-top: 40%;
+    margin-top: 50%;
     width: 100%;
     font-size: 70%;
 }
 
 .title {
-    color: #F6F1F1;
+    color: #304D30;
     font-family: Impact, serif;
     font-size: 380%;
     padding: 30px;
@@ -96,7 +100,7 @@
 }
 
 .title_mob {
-    color: #F6F1F1;
+    color: #304D30;
     font-family: Impact, serif;
     font-size: 200%;
     padding: 30px;

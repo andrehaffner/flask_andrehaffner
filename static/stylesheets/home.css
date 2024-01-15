@@ -1,7 +1,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ home.css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .bio {
-    color: #F6F1F1;
+    color: #304D30;
     float: right;
     font-family: Impact, serif;
     font-size: 40px;
@@ -12,7 +12,7 @@
 }
 
 .bio_mob {
-    color: #F6F1F1;
+    color: #304D30;
     float: right;
     font-family: Impact, serif;
     font-size: 20px;
@@ -25,23 +25,24 @@
 .me {
     float: left;
     margin-left: 5.5vw;
-    margin-top: 10vh;
+    margin-top: 18vh;
+    margin-bottom: 200px;
     object-fit: contain;
     width: 30vw;
 }
 
 .name {
-    color: #19A7CE;
+    color: #304D30;
     float: right;
     font-family: Impact, serif;
     font-size: 50px;
     margin-right: 5vw;
-    margin-top: 12vw;
+    margin-top: 9.5vw;
     width: 50vw;
 }
 
 .name_mob {
-    color: #19A7CE;
+    color: #304D30;
     float: right;
     font-family: Impact, serif;
     font-size: 30px;
@@ -51,7 +52,7 @@
 }
 
 .role {
-    color: #F6F1F1;
+    color: #163020;
     float: right;
     font-family: Impact, serif;
     font-size: 40px;
@@ -61,7 +62,7 @@
 }
 
 .role_mob {
-    color: #F6F1F1;
+    color: #163020;
     float: right;
     font-family: Impact, serif;
     font-size: 20px;

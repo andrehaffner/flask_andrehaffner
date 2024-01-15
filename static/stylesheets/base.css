@@ -12,13 +12,13 @@ a {
 }
 
 .body {
-  background-color: #333333;
+  background-color: #EEF0E5     ;
   font-family: 'Noto Sans', sans-serif;
   margin-bottom: 200px;
 }
 
 .checkbtn {
-  color: #F6F1F1;
+  color: #EEF0E5;
   cursor: pointer;
   display: none;
   float: right;
@@ -34,7 +34,7 @@ a {
 }
 
 .nav {
-    background: #146C94;
+    background: #304D30;
     height: 80px;
     position: fixed;
     width: 100%;
@@ -53,20 +53,20 @@ a {
 
 .nav-link {
     border-radius: 3px;
-    color: #F6F1F1;
+    color: #EEF0E5;
     font-size: 17px;
     padding: 7px 13px;
     text-transform: uppercase;
 }
 
 .nav-link:hover {
-    background: #19A7CE;
+    background: #304D30;
     color: #F6F1F1;
     transition: 0.5s;
 }
 
 .nav-logo {
-    color: #F6F1F1;
+    color: #EEF0E5;
     font-size: 35px;
     font-weight: bold;
     line-height: 80px;
@@ -85,7 +85,7 @@ a {
     }
 
     .nav-items-list {
-        background: #146C94;
+        background: #304D30;
         height: 100vh;
         left: -100%;
         position: fixed;
@@ -106,7 +106,7 @@ a {
 
     a:hover, a.nav-link {
         background: none;
-        color: #F6F1F1;
+        color: #EEF0E5;
     }
 
     #check:checked ~ .nav-items-list {

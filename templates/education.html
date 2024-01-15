@@ -10,43 +10,221 @@
 {% block content %}
 
         <div id="computer">
-            <h2 class="title">EDUCATION</h2>
-            {% for education in data %}
-                <section class="education">
-                    <img src="../static/images/education/{{education.image}}" alt="{{education.image}}" class="photo">
-                    <blockquote class="text">
-                        <p class="diploma">{{education.diploma}}</p>
-                        <p class="institution">{{education.institution}}</p>
-                        <p class="date_period">{{education.date_period}}</p>
-                    </blockquote>
-                    <blockquote class="text2">
-                        {% for paragraph in education.description %}
-                            <p class="description">{{paragraph}}</p>
-                        {% endfor %}
-                    </blockquote>
-                </section>
-            {% endfor %}
-        </div>
+        <h2 class="title">Education</h2>
 
-        <div id="mobile">
-            <h2 class="title_mob">EDUCATION</h2>
-            {% for education in data %}
-                <section class="education_mob">
-                    <div class="education_mob_header">
-                        <img src="../static/images/education/{{education.image}}" alt="{{education.image}}" class="photo_mob">
-                        <blockquote class="text_mob">
-                            <p class="diploma">{{education.diploma}}</p>
-                            <p class="institution">{{education.institution}}</p>
-                            <p class="date_period">{{education.date_period}}</p>
-                        </blockquote>
-                    </div>
-                    <blockquote class="text2_mob">
-                        {% for paragraph in education.description %}
-                            <p class="description">{{paragraph}}</p>
-                        {% endfor %}
-                    </blockquote>
-                </section>
-            {% endfor %}
-        </div>
+        <section class="education" id="data_engineering">
+            <div class="education_header">
+                <img src="../static/images/education/cctb.png" alt="cctb.png" class="photo">
+                <blockquote class="text">
+                    <p class="diploma">Data Engineering & Analytics COOP</p>
+                    <p class="institution">Canadian College of Technology and Business CCTB</p>
+                    <p class="date_period">Jan/2023 - Dec/2023</p>
+                </blockquote>
+            </div>
+            <blockquote class="text2">
+                    <p class="description">
+                        Data engineering is the process of designing, building and maintaining the
+                        infrastructure needed to store, process and analyze large volumes of data. This includes
+                        developing and maintaining data pipelines, databases and data storage systems.
+                    </p>
+                    <p class="description">
+                        On the other hand, data analysis is the process of examining and interpreting data to extract
+                        useful information and knowledge. This involves using statistical and analytical techniques to
+                        identify patterns, trends and relationships in data.
+                    </p>
+                    <p class="description">
+                        Including programming languages like Python and SQL, statistical software packages like SAS and
+                        SPSS, and data visualization tools like Looker, Tableau and Power BI.
+                    </p>
+                    <p class="description">
+                        • Information Systems Management / Business Analysis and Systems Design
+                        <br/>
+                        • Relational Database Systems and SQL / Data Warehouse Concepts / Data Structures
+                        <br/>
+                        • Visual Analysis for Business Intelligence / Business Intelligence (BI) with SSIS, SSAS, SSRS • Information Systems Management / Business Analysis and Systems Design
+                        <br/>
+                        • Probability and Statistics for Data Analysis / Applied Multivariate Statistical Analyst
+                        <br/>
+                        • Linux Administration / Machine Learning / Security and Privacy Issues in Data Analytics
+                        <br/>
+                        • Advanced Topics in Data Analysis: Big Data, Data Mining, Cloud Computing
+                    </p>
+            </blockquote>
+        </section>
+
+        <section class="education" id="computer_science">
+            <div class="education_header">
+                <img src="../static/images/education/descomplica.png" alt="descomplica.png" class="photo">
+                <blockquote class="text">
+                    <p class="diploma">Bachelor of Computer Science</p>
+                    <p class="institution">Descomplica College</p>
+                    <p class="date_period">Sep/2022 - Sep/2026</p>
+                </blockquote>
+            </div>
+            <blockquote class="text2">
+                    <p class="description">
+                        The computer science bachelor's program includes courses in programming languages, data
+                        structures and algorithms, computer organization and architecture, operating systems, software
+                        engineering, database management systems, computer networks, and artificial intelligence.
+                    </p>
+                    <p class="description">
+                        Bachelor of Computer Science graduates are equipped with the knowledge and skills to
+                        pursue careers in a wide range of industries such as software development, information
+                        technology, data analysis, cybersecurity, and research and development.
+                    </p>
+                    <p class="description">
+                        Including programming languages like Python and SQL, statistical software packages like SAS and
+                        SPSS, and data visualization tools like Looker, Tableau and Power BI.
+                    </p>
+                    <p class="description">
+                        • Computational Theory / Computational Science / Project Methodologies
+                        <br/>
+                        • Programming Languages / Object Oriented Programming
+                        <br/>
+                        • Frontend Development / Mobile Developer
+                        <br/>
+                        • DB Developer / BI & Big Data
+                        <br/>
+                        • IA Developer / IoT Developer
+                        <br/>
+                        • Smart Data Structures / Cloud Platform
+                        <br/>
+                        • Software Engineering / Distributed Computing
+                    </p>
+            </blockquote>
+        </section>
+
+        <section class="education" id="business">
+            <div class="education_header">
+                <img src="../static/images/education/ufsc.png" alt="ufsc.png" class="photo">
+                <blockquote class="text">
+                    <p class="diploma">Bachelor of Business</p>
+                    <p class="institution">Federal University of Santa Catarina</p>
+                    <p class="date_period">Jan/2020 - Jul/2022</p>
+                </blockquote>
+            </div>
+            <blockquote class="text2">
+                    <p class="description">
+                        I started my academic training at UFSC, where I studied and got to know different professional
+                        areas. During these 3 years, I focused on discovering my vocation, the area in which I would
+                        like to pursue my career.
+                    </p>
+                    <p class="description">
+                        After several experiences within the university, I got my first internship. It was at this stage
+                        that I found my true passion: technology. Because of this, I decided to make a change of course
+                        in my studies, leaving Business Administration to study Computer Science and Data Engineering.
+                    </p>
+            </blockquote>
+        </section>
+    </div>
+
+    <div id="mobile">
+        <h2 class="title_mob">Education</h2>
+
+        <section class="education_mob" id="data_engineering_mob">
+            <div class="education_mob_header">
+                <img src="../static/images/education/cctb.png" alt="cctb.png" class="photo_mob">
+                <blockquote class="text_mob">
+                    <p class="diploma">Data Engineering Intern</p>
+                    <p class="institution">Canadian College of Technology and Business</p>
+                    <p class="date_period">Jan/2023 - Dec/2023</p>
+                </blockquote>
+            </div>
+            <blockquote class="text2_mob">
+                <p class="description">
+                        Data engineering is the process of designing, building and maintaining the
+                        infrastructure needed to store, process and analyze large volumes of data. This includes
+                        developing and maintaining data pipelines, databases and data storage systems.
+                </p>
+                <p class="description">
+                    On the other hand, data analysis is the process of examining and interpreting data to extract
+                    useful information and knowledge. This involves using statistical and analytical techniques to
+                    identify patterns, trends and relationships in data.
+                </p>
+                <p class="description">
+                    Including programming languages like Python and SQL, statistical software packages like SAS and
+                    SPSS, and data visualization tools like Looker, Tableau and Power BI.
+                </p>
+                <p class="description">
+                    • Information Systems Management / Business Analysis and Systems Design
+                    <br/>
+                    • Relational Database Systems and SQL / Data Warehouse Concepts / Data Structures
+                    <br/>
+                    • Visual Analysis for Business Intelligence / Business Intelligence (BI) with SSIS, SSAS, SSRS • Information Systems Management / Business Analysis and Systems Design
+                    <br/>
+                    • Probability and Statistics for Data Analysis / Applied Multivariate Statistical Analyst
+                    <br/>
+                    • Linux Administration / Machine Learning / Security and Privacy Issues in Data Analytics
+                    <br/>
+                    • Advanced Topics in Data Analysis: Big Data, Data Mining, Cloud Computing
+                </p>
+            </blockquote>
+        </section>
+
+        <section class="education_mob" id="computer_science_mob">
+            <div class="education_mob_header">
+                <img src="../static/images/education/descomplica.png" alt="descomplica.png" class="photo_mob">
+                <blockquote class="text_mob">
+                    <p class="diploma">Bachelor of Computer Science</p>
+                    <p class="institution">Descomplica College</p>
+                    <p class="date_period">Sep/2022 - Sep/2026</p>
+                </blockquote>
+            </div>
+            <blockquote class="text2_mob">
+                <p class="description">
+                        The computer science bachelor's program includes courses in programming languages, data
+                        structures and algorithms, computer organization and architecture, operating systems, software
+                        engineering, database management systems, computer networks, and artificial intelligence.
+                </p>
+                <p class="description">
+                    Bachelor of Computer Science graduates are equipped with the knowledge and skills to
+                    pursue careers in a wide range of industries such as software development, information
+                    technology, data analysis, cybersecurity, and research and development.
+                </p>
+                <p class="description">
+                    Including programming languages like Python and SQL, statistical software packages like SAS and
+                    SPSS, and data visualization tools like Looker, Tableau and Power BI.
+                </p>
+                <p class="description">
+                    • Computational Theory / Computational Science / Project Methodologies
+                    <br/>
+                    • Programming Languages / Object Oriented Programming
+                    <br/>
+                    • Frontend Development / Mobile Developer
+                    <br/>
+                    • DB Developer / BI & Big Data
+                    <br/>
+                    • IA Developer / IoT Developer
+                    <br/>
+                    • Smart Data Structures / Cloud Platform
+                    <br/>
+                    • Software Engineering / Distributed Computing
+                </p>
+            </blockquote>
+        </section>
+
+        <section class="education_mob" id="business_mob">
+            <div class="education_mob_header">
+                <img src="../static/images/education/ufsc.png" alt="ufsc.png" class="photo_mob">
+                <blockquote class="text_mob">
+                    <p class="diploma">Bachelor of Business</p>
+                    <p class="institution">Federal University of Santa Catarina</p>
+                    <p class="date_period">Jan/2020 - Jul/2022</p>
+                </blockquote>
+            </div>
+            <blockquote class="text2_mob">
+                <p class="description">
+                    I started my academic training at UFSC, where I studied and got to know different professional
+                    areas. During these 3 years, I focused on discovering my vocation, the area in which I would
+                    like to pursue my career.
+                </p>
+                <p class="description">
+                    After several experiences within the university, I got my first internship. It was at this stage
+                    that I found my true passion: technology. Because of this, I decided to make a change of course
+                    in my studies, leaving Business Administration to study Computer Science and Data Engineering.
+                </p>
+            </blockquote>
+        </section>
+    </div>
 
 {% endblock %}

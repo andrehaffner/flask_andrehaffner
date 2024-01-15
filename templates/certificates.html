@@ -10,31 +10,127 @@
 {% block content %}
 
         <div id="computer">
-            <h2 class="title">CERTIFICATED COURSES</h2>
-            {% for certificate in data %}
-                <section class="certificate">
-                    <img src="../static/images/certificates/{{certificate.image}}" alt="Not finished yet." class="photo">
-                    <blockquote class="text">
-                        <p class="course">{{certificate.course}}</p>
-                        <p class="institution">{{certificate.institution}}</p>
-                        <p class="date_period">{{certificate.date_period}}</p>
-                    </blockquote>
-                </section>
-            {%  endfor %}
+            <h2 class="title">Certificated Courses</h2>
+
+            <section class="certificate">
+                <img src="../static/images/certificates/javascript.png" alt="Not finished yet." class="photo">
+                <blockquote class="text">
+                    <p class="course">Javascript Course</p>
+                    <p class="institution">Coderhouse</p>
+                    <p class="date_period">Aug/2023</p>
+                </blockquote>
+            </section>
+
+            <section class="certificate">
+                <img src="../static/images/certificates/introduction_to_computer_science.jpg"
+                     alt="Not finished yet." class="photo">
+                <blockquote class="text">
+                    <p class="course">Introduction to Computer Science</p>
+                    <p class="institution">Harvard University School of Continuing Education</p>
+                    <p class="date_period">Dec/2022</p>
+                </blockquote>
+            </section>
+
+            <section class="certificate">
+                <img src="../static/images/certificates/python_postgresql.png" alt="Not finished yet." class="photo">
+                <blockquote class="text">
+                    <p class="course">Python/PostgreSQL Course</p>
+                    <p class="institution">Codestars</p>
+                    <p class="date_period">Dec/2022</p>
+                </blockquote>
+            </section>
+
+            <section class="certificate">
+                <img src="../static/images/certificates/bootcamp_cloud.png" alt="Not finished yet." class="photo">
+                <blockquote class="text">
+                    <p class="course">Cloud Bootcamp</p>
+                    <p class="institution">Cloud Trainings</p>
+                    <p class="date_period">Oct/2022</p>
+                </blockquote>
+            </section>
+
+            <section class="certificate">
+                <img src="../static/images/certificates/professional_excel.png" alt="Not finished yet." class="photo">
+                <blockquote class="text">
+                    <p class="course">Professional Excel</p>
+                    <p class="institution">Bowtie Training Center</p>
+                    <p class="date_period">Sep/2022</p>
+                </blockquote>
+            </section>
+
+            <section class="certificate">
+                <img src="../static/images/certificates/advanced_intensive_english_program.png"
+                     alt="Not finished yet." class="photo">
+                <blockquote class="text">
+                    <p class="course">Advanced Intensive English Program</p>
+                    <p class="institution">International Language Institute Washington D.C.</p>
+                    <p class="date_period">January/2018</p>
+                </blockquote>
+            </section>
+
         </div>
 
         <div id="mobile">
-            <h2 class="title_mob">CERTIFICATED COURSES</h2>
-            {% for certificate in data %}
-                <section class="certificate_mob">
-                    <img src="../static/images/certificates/{{certificate.image}}" alt="Not finished yet." class="photo_mob">
-                    <blockquote class="text_mob">
-                        <p class="course">{{certificate.course}}</p>
-                        <p class="institution">{{certificate.institution}}</p>
-                        <p class="date_period">{{certificate.date_period}}</p>
-                    </blockquote>
-                </section>
-            {% endfor %}
+            <h2 class="title_mob">Certificated Courses</h2>
+
+            <section class="certificate_mob">
+                <img src="../static/images/certificates/javascript.png" alt="Not finished yet." class="photo_mob">
+                <blockquote class="text_mob">
+                    <p class="course">Javascript Course</p>
+                    <p class="institution">Coderhouse</p>
+                    <p class="date_period">Aug/2023</p>
+                </blockquote>
+            </section>
+
+            <section class="certificate_mob">
+                <img src="../static/images/certificates/introduction_to_computer_science.jpg"
+                     alt="Not finished yet." class="photo_mob">
+                <blockquote class="text_mob">
+                    <p class="course">Introduction to Computer Science</p>
+                    <p class="institution">Harvard University School of Continuing Education</p>
+                    <p class="date_period">Dec/2022</p>
+                </blockquote>
+            </section>
+
+            <section class="certificate_mob">
+                <img src="../static/images/certificates/python_postgresql.png"
+                     alt="Not finished yet." class="photo_mob">
+                <blockquote class="text_mob">
+                    <p class="course">Python/PostgreSQL Course</p>
+                    <p class="institution">Codestars</p>
+                    <p class="date_period">Dec/2022</p>
+                </blockquote>
+            </section>
+
+            <section class="certificate_mob">
+                <img src="../static/images/certificates/bootcamp_cloud.png" alt="Not finished yet." class="photo_mob">
+                <blockquote class="text_mob">
+                    <p class="course">Cloud Bootcamp</p>
+                    <p class="institution">Cloud Trainings</p>
+                    <p class="date_period">Oct/2022</p>
+                </blockquote>
+            </section>
+
+            <section class="certificate_mob">
+                <img src="../static/images/certificates/professional_excel.png"
+                     alt="Not finished yet." class="photo_mob">
+                <blockquote class="text_mob">
+                    <p class="course">Professional Excel</p>
+                    <p class="institution">Bowtie Training Center</p>
+                    <p class="date_period">Sep/2022</p>
+                </blockquote>
+            </section>
+
+            <section class="certificate_mob">
+                <img src="../static/images/certificates/advanced_intensive_english_program.png"
+                     alt="Not finished yet." class="photo_mob">
+                <blockquote class="text_mob">
+                    <p class="course">Advanced Intensive English Program</p>
+                    <p class="institution">International Language Institute Washington D.C.</p>
+                    <p class="date_period">January/2018</p>
+                </blockquote>
+            </section>
+
         </div>
 
 {% endblock %}
