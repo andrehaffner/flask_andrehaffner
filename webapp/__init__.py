@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request, redirect
 
 
 def create_app():
@@ -7,4 +7,12 @@ def create_app():
     app.config['SEND_FILE_MAX_AGE'] = 0
     from .views import Views
     app.register_blueprint(Views, url_prefix='/')
+
+    @app.before_request
+    def before_request():
+        if not request.is_secure:
+            url = request.url.replace('http://', 'https://', 1)
+            code = 301
+            return redirect(url, code=code)
+
     return app
