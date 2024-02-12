@@ -6,20 +6,18 @@
     font-family: Impact, serif;
     font-size: 40px;
     margin-right: 5vw;
-    margin-top: 2vw;
+    margin-top: 2.6vw;
     text-align: justify;
     width: 50vw;
 }
 
 .bio_mob {
     color: #304D30;
-    float: right;
     font-family: Impact, serif;
     font-size: 17px;
-    margin-right: 5vw;
-    margin-top: 2vw;
     text-align: justify;
-    width: 50vw;
+    padding: 10px;
+    width: 100%;
 }
 
 .me {
@@ -29,6 +27,12 @@
     margin-bottom: 200px;
     object-fit: contain;
     width: 30vw;
+}
+
+.me_mob {
+    margin-top: 2vh;
+    object-fit: contain;
+    width: 100%;
 }
 
 .name {
@@ -43,12 +47,11 @@
 
 .name_mob {
     color: #304D30;
-    float: right;
     font-family: Impact, serif;
-    font-size: 30px;
-    margin-right: 5vw;
+    font-size: 25px;
+    text-align: center;
     margin-top: 12vw;
-    width: 50vw;
+    width: 100%;
 }
 
 .role {
@@ -63,12 +66,11 @@
 
 .role_mob {
     color: #163020;
-    float: right;
     font-family: Impact, serif;
     font-size: 20px;
-    margin-right: 5vw;
+    text-align: center;
     margin-top: 1vw;
-    width: 50vw;
+    width: 100%;
 }
 
 @media only screen and (max-width: 1026px) {
