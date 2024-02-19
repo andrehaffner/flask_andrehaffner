@@ -3,30 +3,32 @@
 .company {
     color: #B6C4B6;
     font-family: Impact, serif;
-    font-size: 320%;
+    font-size: 200%;
 }
 
 .date_period,
 .role {
     color: #EEF0E5;
     font-family: Impact, serif;
-    font-size: 320%;
+    font-size: 200%;
 }
 
 .description {
     color: #EEF0E5;
+    margin: auto;
     font-family: 'Noto Sans', sans-serif;
     font-size: 130%;
     padding: 1%;
+    width: 100%;
     text-align: justify;
 }
 
 .experience {
     background-color: #304D30;
     border-radius: 5%;
-    margin: 1.5% 10% 1.5% 10%;
+    margin: 1.5% auto 1.5% auto;
     padding: 2%;
-    width: 80%;
+    width: 64%;
 }
 
 .experience_header {
@@ -52,7 +54,7 @@
     border-radius:20%;
     float: left;
     margin: auto;
-    width: 30%;
+    width: 23%;
     padding: 5%;
 }
 
@@ -81,6 +83,7 @@
 }
 
 .text2 {
+    margin-top: -4vw;
     width: 100%;
     padding: 5%;
 }
@@ -94,7 +97,7 @@
 .title {
     color: #304D30;
     font-family: Impact, serif;
-    font-size: 380%;
+    font-size: 300%;
     padding: 30px;
     text-align: center;
 }

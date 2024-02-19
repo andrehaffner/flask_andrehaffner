@@ -4,9 +4,9 @@
     background-color: #304D30;
     border-radius: 5%;
     display: flex;
-    margin: 1.5% 10% 1.5% 10%;
+    margin: 1.5% auto 1.5% auto;
     padding: 2%;
-    width: 80%;
+    width: 64%;
 }
 
 .certificate_mob {
@@ -21,7 +21,7 @@
 .date_period {
     color: #EEF0E5;
     font-family: Impact, serif;
-    font-size: 320%;
+    font-size: 200%;
 }
 
 .description {
@@ -35,14 +35,14 @@
 .institution {
     color: #B6C4B6;
     font-family: Impact, serif;
-    font-size: 320%;
+    font-size: 200%;
 }
 
 .photo {
     border-radius: 10%;
     float: left;
     margin: auto;
-    width: 30%;
+    width: 20%;
 }
 
 .photo_mob {
@@ -75,7 +75,7 @@
 .title {
     color: #304D30;
     font-family: Impact, serif;
-    font-size: 380%;
+    font-size: 300%;
     padding: 30px;
     text-align: center;
 }
