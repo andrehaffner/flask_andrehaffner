@@ -27,6 +27,23 @@ a {
   margin-right: 40px;
 }
 
+.contact {
+    float: right;
+    padding: 10px;
+    margin: auto;
+    width: 10%;
+}
+
+.contacts {
+    margin: auto;
+    width: 64%;
+}
+
+.contacts_mob {
+    margin: auto;
+    width: 80%;
+}
+
 .h {
     position: sticky;
     top: 0;
@@ -126,4 +143,16 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 #check {
     display: none;
+}
+
+@media only screen and (max-width: 1026px) {
+    #computer {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1027px) {
+    #mobile {
+        display: none;
+    }
 }

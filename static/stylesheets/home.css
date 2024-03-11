@@ -2,11 +2,12 @@
 
 .bio {
     color: #304D30;
-    float: right;
+    float: left;
     font-family: Impact, serif;
     font-size: 40px;
     margin-right: 5vw;
     margin-top: 2.6vw;
+    margin-bottom: 100px;
     text-align: justify;
     width: 50vw;
 }
@@ -15,9 +16,10 @@
     color: #304D30;
     font-family: Impact, serif;
     font-size: 17px;
+    margin: auto;
     text-align: justify;
     padding: 10px;
-    width: 100%;
+    width: 80%;
 }
 
 .me {
@@ -37,7 +39,7 @@
 
 .name {
     color: #304D30;
-    float: right;
+    float: left;
     font-family: Impact, serif;
     font-size: 50px;
     margin-right: 5vw;
@@ -56,7 +58,7 @@
 
 .role {
     color: #163020;
-    float: right;
+    float: left;
     font-family: Impact, serif;
     font-size: 40px;
     margin-right: 5vw;
