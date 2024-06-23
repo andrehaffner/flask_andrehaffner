@@ -84,7 +84,7 @@
 .text_mob {
     float: right;
     font-family: Impact, serif;
-    margin: auto;
+    margin-top: 5%;
     text-align: center;
     width: 60%;
     font-size: 2vw;

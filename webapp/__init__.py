@@ -14,5 +14,4 @@ def create_app():
             url = request.url.replace('http://', 'https://', 1)
             code = 301
             return redirect(url, code=code)
-
     return app
